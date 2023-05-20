@@ -31,4 +31,10 @@ $ cd ~/dotfiles
 $ stow bash
 $ stow uzbl
 $ stow vim
-
+```
+When files already exist:
+```
+stow */ --adopt
+git restore .
+```
+WARNING: For leftwm, this repo does not cointain the symlink for the current theme.
