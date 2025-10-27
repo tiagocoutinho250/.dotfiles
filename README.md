@@ -2,20 +2,20 @@
 
 
 ## Apps
-Dotfiles manager: stow
-WM: Hyprland
-Bar: Waybar
-Launcher: Rofi-wayland
-Notifications: swaync
-Screenshots: hyprshot
-Wallpapers: hyprpaper
-Lock: hyprlock
-Logout: wlogout
-Clipboard: cliphist + wl-clipboard
-Display Manager: nwg-displays
-GTK Settings: nwg-look
-Network manager: nm-applet
-Spotify Customization: Spicetify
+- Dotfiles manager: stow
+- WM: Hyprland
+- Bar: Waybar
+- Launcher: Rofi-wayland
+- Notifications: swaync
+- Screenshots: hyprshot
+- Wallpapers: hyprpaper
+- Lock: hyprlock
+- Logout: wlogout
+- Clipboard: cliphist + wl-clipboard
+- Display Manager: nwg-displays
+- GTK Settings: nwg-look
+- Network manager: nm-applet
+- Spotify Customization: Spicetify
 
 Fonts: JetBrainsMono + Iosevka
 
