@@ -37,3 +37,5 @@ function mkcd {
 
 unset rc
 . "$HOME/.cargo/env"
+
+export PATH=$PATH:/home/tcoutinho/.spicetify

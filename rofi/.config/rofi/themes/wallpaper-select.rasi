@@ -1,0 +1,102 @@
+/* config - Wallpaper select */
+
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+  	drun-display-format:         "{name}";
+    hover-select:                true;
+    font:                        "JetBrainsMono";
+    /* Disable MousePrimary as an entry selector */
+    /* Without this setting you won't be able to set MousePrimary as an entry
+    acceptor. */
+    me-select-entry: "";
+	/* Use either LMB single click or RMB single click or LMB double click
+    to accept an entry */
+    me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+/* Config and colors ----------------------------------------------- */
+
+@import "default.rasi"
+
+/* Main Window ------------------------------------------------ */
+window {
+    width:                       100%;
+    height:                      45%;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               0px;
+    border-color:                transparent;
+}
+
+/* Main Box --------------------------------------------------- */
+mainbox {
+    children:                    [ "listview" ];
+    background-color:            transparent;
+    
+	border-radius:               0px;
+    spacing:                     24px;
+    margin:                      0px;
+    padding:                     64px;
+}
+
+/* ---- List ---- */
+listview {
+    columns:                     5;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               false;
+	
+    background-color:            transparent;
+    text-color:                  @foreground;
+
+	border-radius:               0px;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+}
+
+/* Elements --------------------------------------------------- */
+element {
+	children:                    [ element-icon, element-text ];
+    cursor:                      pointer;
+    border-radius:               20px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    text-size:                   0%;
+    orientation:                 vertical;
+    expand:                      false;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+}
+
+@media(max-aspect-ratio: 1.8) {
+    element-icon {
+        orientation:             vertical;
+    }
+}
+
+
+element selected.normal {
+    background-color:            @foreground;
+    text-color:                  @selected-text;
+}
+
+element-icon {
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    size: 						 30%;
+}
+
+element-text {
+    text-color:                  transparent;
+    highlight:                   transparent;
+}

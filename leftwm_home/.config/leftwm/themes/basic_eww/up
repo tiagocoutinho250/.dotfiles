@@ -19,7 +19,7 @@ eww open bar0 &
 
 # Boot picom or compton if it exists
 if [ -x "$(command -v picom)" ]; then
-  picom --experimental-backends &> /dev/null &
+  picom --config ~/.config/picom/picom.conf &> /dev/null &
   # picom &> /dev/null &
 elif [ -x "$(command -v compton)" ]; then
   compton &> /dev/null &
